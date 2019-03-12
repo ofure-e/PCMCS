@@ -15,8 +15,6 @@ from nltk.tokenize import sent_tokenize
 
 sent_text = sent_tokenize(text)
 tokenized_text = [word_tokenize(sentence) for sentence in sent_text]
-#print(tokenized_text)
-#print('\n\n\n')
 
 # convert to lower case
 no_punctuation = []
@@ -37,8 +35,6 @@ for sentence in no_punctuation:
     tokens_no_stopwords = [w for w in sentence if w not in stop_words]
     tokens_no_stopwords = [w for w in tokens_no_stopwords if w not in remove_words]
     clean_tokens.append(tokens_no_stopwords)
-#print(clean_tokens)
-#print('\n\n\n')
 
 #tagged = nltk.pos_tag(clean_tokens)
 #print(tagged)
